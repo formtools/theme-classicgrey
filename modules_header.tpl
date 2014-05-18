@@ -41,8 +41,10 @@
         {else}
           <b>{$settings.program_version}</b>
         {/if}
-        &nbsp;
-        <a href="#" onclick="return ft.check_updates()" class="update_link">{$LANG.word_update}</a>
+        {if $SESSION.account.account_type == "admin"}
+          &nbsp;
+          <a href="#" onclick="return ft.check_updates()" class="update_link">{$LANG.word_update}</a>
+        {/if}
       {else}
         <div style="height: 20px"> </div>
       {/if}
