@@ -44,19 +44,12 @@
 
 <div id="container">
 
-	<div id="header">
-	  <a href="{$settings.logo_link}"><img src="{$theme_url}/images/header_logo.jpg" width="392" height="60" border="0" /></a>
-	</div>
+	<div id="header"><a href="{$settings.logo_link}"><img src="{$theme_url}/images/header_logo.jpg" width="392" height="60" border="0" /></a></div>
 	<div id="header_row">
 
     <div id="left_nav_top">
       {if $SESSION.account.is_logged_in}
-
-   	  {$LANG.word_version} <b>{$settings.program_version}</b>
-	   	  {if $SESSION.settings.is_beta}
-	   	    &#8212; <span style="" class="red bold">{$SESSION.settings.beta_version}</span>
-	   	  {/if}
-
+     	  <b>{$settings.program_version}</b>
 	  	{else}
 	  	  <div style="height: 20px"> </div>
 	    {/if}

@@ -113,12 +113,18 @@ blowing the layout apart. IE gets the original 100% width as in the Livingstone 
 
 .clear { clear: both; }
 
-td,th,p,input,textarea,select,option,optgroup,ul,li,div,span {
+td,th,p,li,div,span,ul {
+	font-family: tahoma, verdana, arial;
+	color: black;
+	line-height: 16px;
+	font-size: 8pt;
+}
+input,textarea,select,option,optgroup {
 	font-family: tahoma, verdana, arial;
 	color: black;
 	font-size: 8pt;
-	line-height: 16px;
 }
+
 img { border: none; }
 a:link, a:visited { color: #00619e; outline: none; }
 form { margin: 0px; }
@@ -158,7 +164,7 @@ div.menu_items div:first-child {
 	width: 180px;
 	font-size: 8.6pt;
 }
-.nav_link a {
+.nav_link a:link, .nav_link a:visited {
 	width: 180px;
 	display: block;
 	vertical-align: center;
@@ -274,6 +280,7 @@ table.add_form_nav td.unselected {
 }
 .tab_not_selected {
 	background-image: url(../images/tab_not_selected_bg.gif);
+	background-repeat: repeat-x;
 	height: 26px;
 	text-align: center;
 	font-weight: bold;

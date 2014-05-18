@@ -51,12 +51,7 @@
 
     <div id="left_nav_top">
       {if $SESSION.account.is_logged_in}
-
-   	  {$LANG.word_version} <b>{$settings.program_version}</b>
-	   	  {if $SESSION.settings.is_beta}
-	   	    &#8212; <span style="" class="red bold">{$SESSION.settings.beta_version}</span>
-	   	  {/if}
-
+	   	  <b>{$settings.program_version}</b>
 	  	{else}
 	  	  <div style="height: 20px"> </div>
 	    {/if}
