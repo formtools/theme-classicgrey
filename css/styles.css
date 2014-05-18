@@ -558,3 +558,13 @@ table.subpanel td {
   float:right;
   margin-top: 5px;
 }
+div.update_link {
+  padding-right: 8px;
+}
+a.update_link:link, a.update_link:visited{
+  color: #ffffcc;
+	text-decoration: none;
+}
+a.update_link:hover {
+  color: orange;
+}
