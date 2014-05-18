@@ -4,7 +4,6 @@
         </div>
 
         <div id="left">
-
           <div class="nav_heading">
             {$LANG.phrase_module_nav}
           </div>
@@ -20,7 +19,6 @@
           <div id="main_nav">
 					  {ft_include file="menu.tpl"}
 					</div>
-
         </div>
 
       </div>
@@ -31,9 +29,14 @@
   </div>
 </div>
 
-<div id="footer">
-  <div style="padding-top:3px;">{$account.settings.footer_text}</div>
-</div>
+
+{* only display the footer area if there is some text entered for it *}
+{if $account.settings.footer_text != "" || $g_enable_benchmarking}
+  <div id="footer">
+    {$account.settings.footer_text}
+    {show_page_load_time}
+  </div>
+{/if}
 
 </body>
 </html>

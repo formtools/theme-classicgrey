@@ -23,11 +23,11 @@
         {assign var=is_current_parent_menu value=false}
       {/if}
 
-      <div class="nav_link"><a href="{$i.url}"{$link_id}>{$i.display_text}</a></div>
+      <div class="nav_link"><a href="{$i.url}"{$link_id} class="no_border">{$i.display_text}</a></div>
 
     {* child menu item *}
     {else}
-      <div class="nav_link_submenu"><a href="{$i.url}"{$link_id}>&#8211; {$i.display_text}</a></div>
+      <div class="nav_link_submenu"><a href="{$i.url}"{$link_id} class="no_border">&#8212; {$i.display_text}</a></div>
     {/if}
 
   {/foreach}

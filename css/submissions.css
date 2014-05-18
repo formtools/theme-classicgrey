@@ -1,0 +1,35 @@
+
+tr.selected_row_color {
+  background-color: #c6f1c9;
+}
+tr.unselected_row_color {
+  background-color: #f2f2f2;
+}
+
+
+/* the edit menu sortable list */
+.submission_list .col2 {
+  width: 176px;
+}
+.submission_list .col2 select {
+  width: 174px;
+}
+.submission_list .col3 {
+  width: 90px;
+  text-align: center;
+}
+.submission_list .col4 {
+  width: 234px;
+}
+.submission_list .col4 .custom_width {
+  width: 30px;
+}
+.submission_list .col5 {
+  width: 100px;
+}
+.submission_list .col5 select {
+  width: 97px;
+}
+.submission_list li.col6 {
+  width: 70px;
+}
