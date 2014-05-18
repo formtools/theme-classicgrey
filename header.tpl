@@ -40,7 +40,6 @@
   {$head_js}
   {$head_css}
   {template_hook location="head_bottom"}
-
 </head>
 <body>
 
@@ -51,7 +50,11 @@
 
     <div id="left_nav_top">
       {if $SESSION.account.is_logged_in}
-     	  <b>{$settings.program_version}</b>
+        {if $settings.release_type == "beta"}
+          <b>{$settings.program_version}-beta-{$settings.release_date}</b>
+        {else}
+          <b>{$settings.program_version}</b>
+        {/if}
 	  	{else}
 	  	  <div style="height: 20px"> </div>
 	    {/if}
