@@ -76,6 +76,7 @@ blowing the layout apart. IE gets the original 100% width as in the Livingstone 
 #left {
 	float: left;
 	width: 200px;
+	min-height: 250px;
 	background-image: url(../images/left_nav_bg.jpg);
 	background-repeat: repeat-x;
 	position: relative; /*** IE needs this ***/
