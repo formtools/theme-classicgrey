@@ -15,8 +15,8 @@
   {literal}}{/literal};
   //]]>
   </script>
-  <link type="text/css" rel="stylesheet" href="{$g_root_url}/global/css/main.css?v=2_1_0">
-  <link type="text/css" rel="stylesheet" href="{$theme_url}/css/styles.css?v=2_1_0">
+  <link type="text/css" rel="stylesheet" href="{$g_root_url}/global/css/main.css?v=3_0_0">
+  <link type="text/css" rel="stylesheet" href="{$theme_url}/css/styles.css?v=3_0_0">
   <link href="{$theme_url}/css/smoothness/jquery-ui-1.8.14.custom.css" rel="stylesheet" type="text/css"/>
   <script src="{$g_root_url}/global/scripts/jquery.js"></script>
   <script src="{$theme_url}/scripts/jquery-ui-1.8.14.custom.min.js"></script>
@@ -34,7 +34,7 @@
   <div id="header">{if $settings.logo_link}<a href="{$settings.logo_link}">{/if}<img src="{$theme_url}/images/header_logo.jpg" width="392" height="60" border="0" />{if $settings.logo_link}</a>{/if}</div>
   <div id="header_row">
     <div id="left_nav_top">
-      {if $SESSION.account.is_logged_in && !$g_omit_top_bar}
+      {if $is_logged_in && !$g_omit_top_bar}
         {if $settings.release_type == "alpha"}
           <b>{$settings.program_version}-alpha-{$settings.release_date}</b>
         {elseif $settings.release_type == "beta"}
@@ -42,8 +42,7 @@
         {else}
           <b>{$settings.program_version}</b>
         {/if}
-        {if $SESSION.account.account_type == "admin"}
-          &nbsp;
+        {if $account.account_type == "admin"}
           <a href="#" onclick="return ft.check_updates()" class="update_link">{$LANG.word_update}</a>
         {/if}
       {else}
