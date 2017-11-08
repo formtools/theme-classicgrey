@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html dir="{$LANG.special_text_direction}">
 <head>
   <title>{$head_title}</title>
@@ -34,7 +34,7 @@
   <div id="header">{if $settings.logo_link}<a href="{$settings.logo_link}">{/if}<img src="{$theme_url}/images/header_logo.jpg" width="392" height="60" border="0" />{if $settings.logo_link}</a>{/if}</div>
   <div id="header_row">
     <div id="left_nav_top">
-      {if $is_logged_in && !$g_omit_top_bar}
+      {if $is_logged_in}
         {if $settings.release_type == "alpha"}
           <b>{$settings.program_version}-alpha-{$settings.release_date}</b>
         {elseif $settings.release_type == "beta"}
