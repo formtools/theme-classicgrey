@@ -40,7 +40,6 @@ $FILES = array(
   "css/views.css",
   "css/widgets.css",
   "footer.tpl",
-  "forget_password.tpl",
   "header.tpl",
   "images/",
   "images/account_section_bg.jpg",
@@ -103,15 +102,9 @@ $FILES = array(
   "images/utilities.png",
   "images/utilities_small.png",
   "images/view.png",
-  "index.tpl",
-  "menu.tpl",
-  "messages.tpl",
-  "module_menu.tpl",
   "modules_footer.tpl",
   "modules_header.tpl",
   "scripts/",
   "scripts/jquery-ui-1.8.14.custom.min.js",
-  "tabset_close.tpl",
-  "tabset_open.tpl",
   "theme_config.php"
 );

@@ -33,10 +33,12 @@
 <body class="module_pages">
 
 <div id="container">
-    <div id="header">{if $settings.logo_link}<a href="{$settings.logo_link}">{/if}<img src="{$theme_url}/images/header_logo.jpg" width="392" height="60" border="0" />{if $settings.logo_link}</a>{/if}</div>
+    <div id="header">
+        {if isset($settings.logo_link) && !empty($settings.logo_link)}<a href="{$settings.logo_link}">{/if}<img src="{$theme_url}/images/header_logo.jpg" width="392" height="60" border="0" />{if isset($settings.logo_link) && !empty($settings.logo_link)}</a>{/if}
+    </div>
     <div id="header_row">
         <div id="left_nav_top">
-            {if $account.is_logged_in}
+            {if !$hide_header_bar && $account.is_logged_in}
                 {if $settings.release_type == "alpha"}
                     <b>{$settings.program_version}-alpha-{$settings.release_date}</b>
                 {elseif $settings.release_type == "beta"}
