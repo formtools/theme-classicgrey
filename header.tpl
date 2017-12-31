@@ -20,8 +20,8 @@
   <link href="{$theme_url}/css/smoothness/jquery-ui-1.8.14.custom.css" rel="stylesheet" type="text/css"/>
   <script src="{$g_root_url}/global/scripts/jquery.js"></script>
   <script src="{$theme_url}/scripts/jquery-ui-1.8.14.custom.min.js"></script>
-  <script src="{$g_root_url}/global/scripts/general.js?v=2_1_0"></script>
-  <script src="{$g_root_url}/global/scripts/rsv.js?v=2_1_0"></script>
+  <script src="{$g_root_url}/global/scripts/general.js?v=3_0_0"></script>
+  <script src="{$g_root_url}/global/scripts/rsv.js?v=3_0_0"></script>
   {$head_string}
   {$head_js}
   {$head_css}
@@ -31,10 +31,10 @@
 <body>
 
 <div id="container">
-  <div id="header">{if $settings.logo_link}<a href="{$settings.logo_link}">{/if}<img src="{$theme_url}/images/header_logo.jpg" width="392" height="60" border="0" />{if $settings.logo_link}</a>{/if}</div>
+  <div id="header">{if isset($settings.logo_link)}<a href="{$settings.logo_link}">{/if}<img src="{$theme_url}/images/header_logo.jpg" width="392" height="60" border="0" />{if isset($settings.logo_link)}</a>{/if}</div>
   <div id="header_row">
     <div id="left_nav_top">
-      {if $is_logged_in}
+      {if $is_logged_in && isset($settings.program_version)}
         {if $settings.release_type == "alpha"}
           <b>{$settings.program_version}-alpha-{$settings.release_date}</b>
         {elseif $settings.release_type == "beta"}
