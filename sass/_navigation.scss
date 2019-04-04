@@ -1,5 +1,5 @@
 .nav_heading {
-  background-image: url(../images/nav_bg.jpg);
+  background-image: url('../images/nav_bg.jpg');
   padding-left: 20px;
   color: white;
   height: 16px;
@@ -20,7 +20,7 @@ div#left_nav {
 div.menu_items div:first-child {
   width: 180px;
   font-size: 8.6pt;
-  border-top: 0px;
+  border-top: 0;
 }
 
 .nav_link {
@@ -28,7 +28,8 @@ div.menu_items div:first-child {
   font-size: 8.6pt;
 }
 
-.nav_link a:link, .nav_link a:visited {
+.nav_link a:link,
+.nav_link a:visited {
   width: 180px;
   display: block;
   vertical-align: center;
@@ -67,7 +68,7 @@ div.menu_items div:first-child {
   padding-top: 3px;
   padding-bottom: 3px;
   color: black;
-  background-color: #D2E0EF;
+  background-color: #d2e0ef;
 }
 
 .nav_link_selected a {
@@ -87,7 +88,8 @@ table.add_form_nav td.selected {
   border-right: 1px solid #cccccc;
 }
 
-table.add_form_nav td.selected a:link, table.add_form_nav td.selected a:visited {
+table.add_form_nav td.selected a:link,
+table.add_form_nav td.selected a:visited {
   text-decoration: none;
   width: 100%;
   color: white;
@@ -103,7 +105,7 @@ table.add_form_nav td.unselected {
   border-right: 1px solid #cccccc;
 }
 
-/* previous / next links */
+// previous / next links
 .prevnext_links {
   text-align: right;
   margin-top: 4px;
@@ -120,7 +122,6 @@ table.add_form_nav td.unselected {
 .prevnext_links span a {
   padding: 2px 8px;
   background-color: #efefef;
-  -moz-border-radius: 3px;
   border-radius: 3px;
   color: #333333;
 }
@@ -131,7 +132,7 @@ table.add_form_nav td.unselected {
   text-decoration: none;
 }
 
-/* for nav pagination */
+// for nav pagination
 div#list_nav {
   line-height: 19px;
   margin-top: 2px;
@@ -141,8 +142,9 @@ div#list_nav span {
   font-size: 11pt;
 }
 
-#list_nav a:visited, #list_nav a:link {
-  text-decoration: none
+#list_nav a:visited,
+#list_nav a:link {
+  text-decoration: none;
 }
 
 #list_nav a:hover {

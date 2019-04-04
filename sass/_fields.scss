@@ -2,6 +2,7 @@
   overflow: auto;
   width: 423px;
   float: left;
+  min-height: 21px;
 }
 
 .scroll-content {
@@ -9,13 +10,11 @@
   float: left;
 }
 
-/* * html .scroll-content-item { display: inline; } IE6 float double margin bug */
-
 .scroll-bar-wrap {
   clear: left;
   padding: 0 4px 0 2px;
-  margin: 0 -1px -1px -1px;
-  border-top: 0px;
+  margin: 0 -1px -1px;
+  border-top: 0;
 }
 
 .scroll-bar-wrap .ui-slider {
@@ -39,17 +38,13 @@
 }
 
 .scroll-bar-wrap .ui-slider-handle .ui-icon {
-  margin: -8px auto 0;
+  margin: -9px auto 0;
   position: relative;
   top: 50%;
 }
 
-.scroll-pane {
-  min-height: 21px;
-}
-
 body .scroll-bar-wrap .ui-slider {
-  height: 1.7em;
+  height: 1.6em;
 }
 
 body .scroll-bar-wrap .ui-slider-handle {
@@ -107,7 +102,7 @@ body .scroll-bar-wrap .ui-slider-handle {
 }
 
 body .edit_fields {
-  background: transparent url(../images/fields_table_bg.png) repeat-y;
+  background: transparent url('../images/fields_table_bg.png') repeat-y;
 }
 
 body .edit_fields .col3 {
@@ -116,20 +111,21 @@ body .edit_fields .col3 {
 
 body .edit_fields .header_row .col3 {
   background: none;
-  border-right: 0px;
+  border-right: 0;
 }
 
 .edit_fields .rows .col3 {
   overflow: hidden;
 }
 
-.edit_fields .header_row li.splitter, li.splitter,
+.edit_fields .header_row li.splitter,
+li.splitter,
 body .sortable div.row_content .system_field li.splitter,
 body .sortable div.row_content li.splitter {
   width: 1px;
   background-color: #999999;
   background-image: none;
-  border-bottom: 0px;
+  border-bottom: 0;
 }
 
 body .sortable div.row_content .system_field li.splitter {
@@ -143,12 +139,12 @@ body .sortable div.row_content .system_field li.splitter {
 
 body .sortable div.row_content .system_field li.col0 {
   background-color: transparent;
-  border-bottom: 0px;
+  border-bottom: 0;
 }
 
 .sortable .rows div.row_content li.col0 {
   background-color: transparent;
-  border-bottom: 0px;
+  border-bottom: 0;
 }
 
 .sortable .rows .scroll-content {
@@ -156,7 +152,7 @@ body .sortable div.row_content .system_field li.col0 {
 }
 
 .sortable ul.rows li .scroll-content li {
-  margin-right: 0px;
+  margin-right: 0;
   padding-right: 1px;
 }
 
@@ -165,27 +161,14 @@ body .edit_fields .rows .col3 {
 }
 
 body .sortable .rows .colN {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 body .scroll-bar-wrap .ui-slide {
   height: 1.5em;
 }
 
-.scroll-bar-wrap .ui-slider-handle .ui-icon {
-  margin: -9px auto 0px;
-}
-
-body .scroll-bar-wrap .ui-slider {
-  height: 1.6em;
-}
-
-body .scroll-bar-wrap .ui-slider-handle {
-  height: 1.3em;
-}
-
-
-/* the Edit Form -> Fields tab */
+// the Edit Form -> Fields tab
 .edit_fields .col2 {
   width: 182px;
 }
@@ -211,9 +194,10 @@ body .scroll-bar-wrap .ui-slider-handle {
   width: 18px;
 }
 
-
-/* for the edit field dialog window */
-#edit_field__display_text, #edit_field__field_name, #edit_field__db_column {
+// for the edit field dialog window
+#edit_field__display_text,
+#edit_field__field_name,
+#edit_field__db_column {
   width: 300px;
 }
 
@@ -237,7 +221,7 @@ body .scroll-bar-wrap .ui-slider-handle {
   color: #cccccc;
 }
 
-/* ... this needs to be used in a lot of places ... */
+// ... this needs to be used in a lot of places ...
 .inner_tab_content tr {
   height: 23px;
 }
@@ -255,5 +239,5 @@ body .scroll-bar-wrap .ui-slider-handle {
 }
 
 #edit_field .check_area:hover {
-  background-color: #f2f2f2 !important;
+  background-color: #f2f2f2 !important; // sass-lint:disable-line no-important
 }

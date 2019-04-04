@@ -4,8 +4,6 @@
   border: 1px solid #999999;
   background-color: #ffffcc;
   text-align: center;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
   border-radius: 6px;
 }
 
@@ -13,7 +11,7 @@
   min-height: 80px;
 }
 
-/* the add form step 2 page has a slightly wider space available */
+// the add form step 2 page has a slightly wider space available
 #add_form .multi_page_form_list {
   width: 529px;
 }
@@ -34,7 +32,7 @@
   width: 98px;
 }
 
-/* the add form step 4 sortable list */
+// the add form step 4 sortable list
 .add_form_step4 .col1 {
   color: #666666;
 }
@@ -69,7 +67,7 @@
   width: 18px;
 }
 
-/* add external form step 5 */
+// add external form step 5
 .review_field_options .col2 {
   width: 261px;
 }
@@ -85,7 +83,6 @@
 .review_field_options .col3 input {
   width: 255px;
 }
-
 
 .multi_page_form_list {
   width: 491px;
@@ -118,8 +115,6 @@
 .placeholders_section {
   padding: 6px;
   border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
   background-color: #efefef;
   float: right;
   margin-left: 6px;
@@ -135,7 +130,7 @@
 }
 
 .placeholders_link {
-  margin: 0px 8px 0px 2px;
+  margin: 0 8px 0 2px;
 }
 
 #placeholders_dialog_content {

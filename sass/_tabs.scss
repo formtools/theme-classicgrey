@@ -1,35 +1,27 @@
 .main_tabset {
-  margin: 0px;
+  margin: 0;
   list-style: none;
-  padding-left: 0px;
+  padding-left: 0;
   margin-bottom: -5px;
 }
 
-.main_tabset li {
-  float: left;
-  height: 26px;
-  margin-right: 1px;
-}
-
 .main_tabset li a {
-  padding: 2px 6px 0px;
+  padding: 2px 6px 0;
   display: block;
   color: #555555;
 }
 
 .main_tabset li {
+  float: left;
+  margin-right: 1px;
   background-color: #efefef;
   min-width: 96px;
   border-top: 1px solid #cfcfcf;
   border-left: 1px solid #cfcfcf;
   border-right: 1px solid #cfcfcf;
-  -webkit-border-top-left-radius: 8px;
-  -webkit-border-top-right-radius: 8px;
-  -moz-border-radius-topleft: 8px;
-  -moz-border-radius-topright: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  whitespace: no-wrap;
+  white-space: nowrap;
   height: 22px;
   text-align: center;
 }
@@ -56,7 +48,7 @@
   border: 1px solid #cfcfcf;
 }
 
-/* Javascript tabsets */
+// Javascript tabsets
 .inner_tabset {
   border: 1px solid #dddddd;
 }
@@ -101,9 +93,7 @@
 }
 
 .inner_tab_content {
-  background-color: #f9f9f9;
   padding: 10px;
-  padding-top: 10px;
   background-color: #ffffff;
 }
 
